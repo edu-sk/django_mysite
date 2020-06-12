@@ -104,4 +104,10 @@ def forif(request):
     }
     return render(request, 'forif.html', context)
 
-
+def presentation(request):
+    students = ['강인선','곽혜란','김민정','김서연','김성현','김현수','김현정','문준우','박누리','백승재','성민재','신승환','심재민','오성식','유명인','유환우','윤소윤','이영주','이정윤','이준성']
+    random.shuffle(students)
+    context = {
+        'students' : students
+    }
+    return render(request, 'presentaion.html', context)

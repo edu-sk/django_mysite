@@ -30,4 +30,5 @@ urlpatterns = [
     path('pigeon/<int:big>/<int:small>/', views.pigeon),
     path('dtl/', views.dtl),
     path('forif/', views.forif),
+    path('presentation/', views.presentation),
 ]
